@@ -1,0 +1,76 @@
+/* Simple website, color scheme is
+ * #FFFCF2 (off-white)
+ * #CCC5B9 (light grey)
+ * #403D9  (middle grey)
+ * #252422 (off-black/light black)
+ * #EB5E28 (orange)
+ */
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+
+* {
+  -webkit-user-select: none; /* Safari */
+  -moz-user-select: none; /* Firefox */
+  -ms-user-select: none; /* IE10+/Edge */
+  user-select: none; /* Standard */
+  font-family: 'Open Sans', sans-serif;
+}
+
+
+body {
+  background-color: #FFFCF2;
+}
+
+h1, h2, h3, h4, h5, h6, strong {
+  color: #252422;
+}
+
+a {
+}
+
+.container {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%,-50%);
+}
+
+.name-box {
+  text-align: center;
+}
+
+.name {
+  font-size: 3em;
+  font-weight: 300;
+}
+
+.link-group {
+  margin: auto;
+  text-align: center;
+  width: 100%;
+}
+
+.link {
+   width: 25%;
+   text-transform: lowercase;
+   text-decoration: none;
+   font-size: 1.25em;
+   padding-left: 0.5em;
+   padding-right: 0.5em;
+   -o-transition:.5s;
+   -ms-transition:.5s;
+   -moz-transition:.5s;
+   -webkit-transition:.5s;
+   transition:.5s;
+}
+
+.link:link {
+  color: #252422;
+}
+
+.link:visited {
+  color: #CCC5B9;
+}
+
+.link:hover {
+  color: #EB5E28;
+}

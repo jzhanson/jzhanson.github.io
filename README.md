@@ -1,5 +1,9 @@
 # jzhanson.github.io
 
-Personal website for Josh Zhanson, served over GitHub Pages. Work in progress!
-Note: master branch is published since jzhanson.github.io is a User Page by GitHub [policy](https://help.github.com/articles/configuring-a-publishing-source-for-github-pages/)
+Personal website for Josh Zhanson, built using Jekyll and hosted by GitHub Pages. Inspiration for current iteration from [skrulcik's website](https://github.com/skrulcik/skrulcik.github.io).
 
+## To update website:
+
+1.  Update index.html
+2.  Update style.css
+3.  Update favicon.ico
