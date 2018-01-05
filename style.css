@@ -17,11 +17,11 @@
 
 
 body {
-  background-color: #FFFCF2;
+  background-color: #000000;
 }
 
 h1, h2, h3, h4, h5, h6, strong {
-  color: #252422;
+  color: #FFFFFF;
 }
 
 a {
@@ -64,13 +64,13 @@ a {
 }
 
 .link:link {
-  color: #252422;
+  color: #FFFFFF;
 }
 
 .link:visited {
-  color: #CCC5B9;
+  color: #000000;
 }
 
 .link:hover {
-  color: #EB5E28;
+  color: #B8E1FF;
 }
