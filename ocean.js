@@ -2,9 +2,12 @@ var centerX;
 var centerY;
 var zoomed;
 
+function preload() {
+  img = loadGif('ocean.gif');
+}
+
 function setup() {
   createCanvas(windowWidth, windowHeight);
-  img = loadGif('ocean.gif');
   centerX = windowWidth / 2;
   centerY = windowHeight / 2;
 }
@@ -57,6 +60,3 @@ function mousePressed() {
   }
 }
 
-function mouseDragged() {
-
-}
