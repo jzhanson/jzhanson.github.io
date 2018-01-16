@@ -1,5 +1,6 @@
 var smallStars = [];
 var largeStars = [];
+var hyperspace = false;
 
 
 function setup() {
@@ -47,6 +48,9 @@ Star.prototype.draw = function() {
 
   rect(this.x, this.y, this.wh, this.wh);
 
+  if (hyperspace) {
+    hyperspaceLines(this.x, this.y);
+  }
 }
 
 function LargeStar() {
@@ -67,6 +71,10 @@ LargeStar.prototype.draw = function() {
   line(this.x-1, this.y, this.x+1, this.y);
   line(this.x, this.y+1, this.x, this.y-1);
 
+  if (hyperspace) {
+    hyperspaceLines(this.x, this.y);
+  }
+
   /*
   line(x+this.size, y, x-this.size, y);
   line(x, y+this.size, x, y-this.size);
@@ -75,5 +83,29 @@ LargeStar.prototype.draw = function() {
   */
 }
 
+function mousePressed() {
+  hyperspace = !hyperspace;
+}
 
+function hyperspaceLines(x, y) {
+  var xOffset = 0;
+  var yOffset = 0;
+  if (x < windowWidth / 2) {
+    xOffset = -5;
+  }
+  else {
+    xOffset = 5;
+  }
+  if (y < windowHeight / 2) {
+    yOffset = -5;
+  }
+  else {
+    yOffset = 5;
+  }
 
+  /*
+  stroke(255);
+  line(x+xOffset, y+yOffset, x, y);
+  */
+
+}
