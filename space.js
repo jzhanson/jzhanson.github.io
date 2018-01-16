@@ -41,16 +41,18 @@ function Star() {
 }
 
 Star.prototype.draw = function() {
-  noStroke();
-  fill(255, 255, 255);
-
-  this.wh = random(1, 3);
-
-  rect(this.x, this.y, this.wh, this.wh);
-
   if (hyperspace) {
     hyperspaceLines(this.x, this.y);
   }
+  else {
+    noStroke();
+    fill(255, 255, 255);
+
+    this.wh = random(1, 3);
+
+    rect(this.x, this.y, this.wh, this.wh);
+  }
+
 }
 
 function LargeStar() {
@@ -61,26 +63,28 @@ function LargeStar() {
 }
 
 LargeStar.prototype.draw = function() {
-  stroke(255);
-
-  this.size = random(1, 3);
-
-  line(this.x-this.size, this.y+this.size, this.x+this.size, this.y-this.size);
-  line(this.x-this.size, this.y-this.size, this.x+this.size, this.y+this.size);
-
-  line(this.x-1, this.y, this.x+1, this.y);
-  line(this.x, this.y+1, this.x, this.y-1);
-
   if (hyperspace) {
     hyperspaceLines(this.x, this.y);
   }
+  else {
+    stroke(255);
 
-  /*
-  line(x+this.size, y, x-this.size, y);
-  line(x, y+this.size, x, y-this.size);
-  line(x-1, y+1, x-1, y-1);
-  line(x+1, y+1, x+1, y-1);
-  */
+    this.size = random(1, 3);
+
+    line(this.x-this.size, this.y+this.size, this.x+this.size, this.y-this.size);
+    line(this.x-this.size, this.y-this.size, this.x+this.size, this.y+this.size);
+
+    line(this.x-1, this.y, this.x+1, this.y);
+    line(this.x, this.y+1, this.x, this.y-1);
+
+    /*
+       line(x+this.size, y, x-this.size, y);
+       line(x, y+this.size, x, y-this.size);
+       line(x-1, y+1, x-1, y-1);
+       line(x+1, y+1, x+1, y-1);
+       */
+  }
+
 }
 
 function mousePressed() {
@@ -88,6 +92,8 @@ function mousePressed() {
 }
 
 function hyperspaceLines(x, y) {
+  var centerX = windowWidth / 2;
+  var centerY = windowHeight / 2;
   var xOffset = 0;
   var yOffset = 0;
   if (x < windowWidth / 2) {
@@ -103,9 +109,7 @@ function hyperspaceLines(x, y) {
     yOffset = 5;
   }
 
-  /*
   stroke(255);
   line(x+xOffset, y+yOffset, x, y);
-  */
 
 }
