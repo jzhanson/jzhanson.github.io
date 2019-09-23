@@ -7,3 +7,12 @@ url: "http://jzhanson.com" # the base hostname & protocol for your site
 github_username: jzhanson
 
 markdown: kramdown
+
+nav:
+ - name: "About"
+   link: "/"
+ - name: "Resume"
+   link: "resume.pdf"
+ - name: "Contact"
+   link: "contact"
+

@@ -1,37 +1,31 @@
-/* Simple website, color scheme is
- * #FFFCF2 (off-white)
- * #CCC5B9 (light grey)
- * #403D9  (middle grey)
- * #252422 (off-black/light black)
- * #EB5E28 (orange)
- */
-@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+@import url('https://fonts.googleapis.com/css?family=Oxygen');
 
 * {
-  -webkit-user-select: none; /* Safari */
-  -moz-user-select: none; /* Firefox */
-  -ms-user-select: none; /* IE10+/Edge */
-  user-select: none; /* Standard */
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Oxygen', sans-serif;
 }
 
 
 body {
-  background-color: #000000;
+  background-color: #FFFFFF;
+  min-width:1000px;
 }
 
 h1, h2, h3, h4, h5, h6, strong {
-  color: #FFFFFF;
+  color: #000000;
 }
 
 a {
 }
 
 .container {
-  position: fixed;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%,-50%);
+  width: 80%
+  margin: auto
+}
+
+.section {
+  width: 80%;
+  margin: auto;
+  text-align: left;
 }
 
 .name-box {
@@ -49,30 +43,21 @@ a {
   width: 100%;
 }
 
-.link {
-   width: 25%;
-   text-transform: lowercase;
-   text-decoration: none;
-   font-size: 1.25em;
-   padding-left: 0.5em;
-   padding-right: 0.5em;
-   -o-transition:.5s;
-   -ms-transition:.5s;
-   -moz-transition:.5s;
-   -webkit-transition:.5s;
-   transition:.5s;
+img.profile-img {
+  max-width: 200px;
+  max-height: 200px;
+  /*width: auto;*/
+  /*height: auto;*/
+  border-radius: 8px;
 }
 
-.link:link {
-  color: #FFFFFF;
-}
-
-.link:visited {
-  color: #B9AFED;
-}
-
-.link:hover {
-  /* color: #4CB1F8; */
-  color: #B8E1FF;
+img.table-img {
+  max-width: 150px;
+  max-height: 150px;
+  width: auto;
+  height: auto;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  margin-right: 5px;
 }
 

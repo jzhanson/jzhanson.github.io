@@ -12,30 +12,172 @@
     <meta name="theme-color" content="#ffffff">
 
     <link rel="stylesheet" href="style.css">
-    <title>Josh Zhanson</title>
-
-    <script src="p5/p5.min.js" type="text/javascript"></script>
-    <script src="space.js" type="text/javascript"></script>
-
+    <title>Joshua Zhanson</title>
   </head>
 
-  <body>
-    <div class="container">
-      <div class="name-box">
-        <h1 class="name"><span class="h2v">Josh</span> <span class="h2v">Zhanson</span></h1>
-        <div class="link-group">
-          <a class="link h2v" href="mailto:josh@jzhanson.com">Email</a>
-          <a class="link h2v" href="http://blog.jzhanson.com" target="_blank">Blog</a>
-          <a class="link h2v" href="./jzhanson-resume.pdf" target="_blank">Resume</a>
-          <a class="link h2v" href="https://github.com/jzhanson" target="_blank">GitHub</a>
-          <!--
-          {% for page in site.data.pages %}
-          <a class="link h2v" href="{{ page.url }}">{{ page.name }}</a>
-          {% endfor %}
-          -->
-        </div>
+  <body class="container">
+    <div class="name-box" align="center">
+      <h1 class="name">Joshua Zhanson</h1>
+    </div>
+
+    <div class="section">
+      <div style="float: right; margin: 0px 20px">
+        <img class="profile-img" src="img/profile.jpg" alt="Mount Washington Trail, WA">
+        <p style="padding: 0; margin: 0">Email: josh<span style="display:none">spam</span> at jzhanson dot com</p>
+        <p style="padding: 0; margin: 0"> <a href="./jzhanson_resume.pdf" target="_blank">Resume</a>, CV (under construction)</p>
+      </div>
+
+      <div id="bio"  align="left">
+        <p>I'm a senior (4th-year undergraduate) at Carnegie Mellon University studying computer science with a minor in machine learning.</p>
+
+          <p>I'm broadly interested in leveraging structure to tackle tough problems, such as robotic control in deep reinforcement learning.</p>
+
+          <p>I'm passionate about teaching and undergraduate research. I have fun <a href="#involvement">organizing events</a>. I also occasionally write instructive <a href="http://blog.jzhanson.com" target="_blank">blog</a> posts.</p>
+
+          <p>In my spare time, I love hiking, biking, running, and the <a href="https://www.wta.org/go-hiking/hikes/mailbox-peak-old-trail">great</a> <a href="https://www.nps.gov/mora/planyourvisit/paradise.htm">outdoors</a>.</p>
       </div>
     </div>
+
+    <!--
+    <div class="section" id="news">
+      <h2>News</h2>
+      <ul>
+        <li>[Dec 11, 2019] First</li>
+        <li>[Jan 10, 2019] Second</li>
+      </ul>
+    </div>
+    -->
+
+    <div class="section" id="projects">
+      <h2>Research</h2>
+      <table>
+        <tbody>
+          <tr>
+            <td><img class="table-img" src="img/proprioceptive_state.png" alt="hover"></td>
+            <td>
+              <h3 style="padding: 0; margin: 0"><a href="http://spirl.info/2019/camera-ready/spirl_camera-ready_41.pdf">Proprioceptive Spatial Representations for Generalized Locomotion</a></h3>
+              <p style="padding: 0; margin: 0"><b>Joshua Zhanson</b>, Emilio Parisotto, Ruslan Salakhutdinov</p>
+              <p style="padding: 0; margin: 0"><a href="http://spirl.info/2019/camera-ready/spirl_camera-ready_41.pdf">pdf</a>, <a href=https://www.youtube.com/watch?v=epQrORTP5Q8>video</a>, <a href="https://sites.google.com/view/proprioceptive-representations">website</a>,  code (coming soon)</p>
+              <p style="padding: 0; margin: 0">Workshop on Structure and Priors in Reinforcement Learning (<a href="http://spirl.info/2019/about/">SPiRL</a>) at ICLR 2019</p>
+              <p>A body-space state representation that implicitly encodes relative positional information by mapping sensor readings onto a spatial grid over the robot’s body facilitates learning of a general locomotion policy transferable across many randomized body configurations with different balances and requiring different walking gaits.</p>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="section" id="teaching">
+      <h2>Teaching</h2>
+      <table>
+        <tbody>
+          <tr>
+            <td><img class="table-img" src="img/10703.jpg" alt="hover"></td>
+            <td>
+              <h3 style="padding: 0; margin: 0"><a href="https://cmudeeprl.github.io/703website/">10-703 Deep Reinforcement Learning and Control</a></h3>
+              <p style="padding: 0; margin: 0">TA, Fall 2019</p>
+              <p style="padding: 0; margin: 0"></p>
+            </td>
+          </tr>
+
+          <tr>
+            <td><img class="table-img" src="img/15300.png" alt="hover"></td>
+            <td>
+              <h3 style="padding: 0; margin: 0"><a href="http://www.cs.cmu.edu/afs/cs.cmu.edu/academic/class/15300-f19/www">15-300 Research and Innovation in Computer Science</a></h3>
+              <p style="padding: 0; margin: 0">TA, Fall 2019</p>
+              <p style="padding: 0; margin: 0">I help equip students with the tools needed to get involved in and effectively carry out undergraduate research. I also provide mentorship and support during undergraduate research projects and coaching on topics such as academic writing and presenting research to an academic and non-academic audience.</p>
+            </td>
+          </tr>
+
+          <tr>
+            <td><img class="table-img" src="img/15213.jpg" alt="hover"></td>
+            <td>
+              <h3 style="padding: 0; margin: 0"><a href="https://www.cs.cmu.edu/afs/cs/academic/class/15213-m19/www/index.html">15-213 Introduction to Computer Systems</a></h3>
+              <p style="padding: 0; margin: 0">TA, Summer 2019</p>
+              <p style="padding: 0; margin: 0">I developed active learning lecture activities on system-level I/O, network protocols, and participated in development for activities on bit-level representations, machine programming, and exceptional control flow (processes and signals). I also scaled and benchmarked memory access traces to evaluate student dynamic memory allocator submissions.</p>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="section" id="projects">
+      <h2>Projects</h2>
+      <table>
+        <tbody>
+          <tr>
+            <td><img class="table-img" src="img/parallel_mcts.jpg" alt="hover"></td>
+            <td>
+              <h3 style="padding: 0; margin: 0">Parallel Monte Carlo Tree Search for Tak</h3>
+              <p style="padding: 0; margin: 0">With Eric Nie.</p>
+              <p style="padding: 0; margin: 0">Final project for <a href="http://www.cs.cmu.edu/afs/cs/academic/class/15418-s19/www/index.html">15-418 Parallel Computer Architecture and Programming, Spring 2019</a></p>
+              <p style="padding: 0; margin: 0"> We implemented and benchmarked a leaf-parallelized, root-parallelized, and tree-parallelized Monte Carlo Tree Search agent to play the fantasy board game <a href="https://en.wikipedia.org/wiki/Tak_(game)">Tak</a>.
+              </p>
+            </td>
+          </tr>
+          <tr>
+            <td><img class="table-img" src="img/breakout_demo.png" alt="hover"></td>
+            <td>
+              <h3 style="padding: 0; margin: 0"><a href="https://github.com/jzhanson/breakout-demo">breakout-demo</a></h3>
+              <p style="padding: 0; margin: 0"></p>
+              <p style="padding: 0; margin: 0"></p>
+              <p style="padding: 0; margin: 0"> I implemented and trained Advantage Actor-Critic agent to reach 200+ average reward per episode over 100 episodes and max reward of 428 on OpenAI Gym Breakout-v0 environment. I also wrote a <a href="http://blog.jzhanson.com/blog/rl/project/2018/05/28/breakout.html">blog post</a> about it.
+              </p>
+            </td>
+          </tr>
+
+          <tr>
+            <td><img class="table-img" src="img/slither_after.png" alt="hover"></td>
+            <td>
+              <h3 style="padding: 0; margin: 0">Slither-703</h3>
+              <p style="padding: 0; margin: 0">With Shreyan Bakshi and Eric Nie. </p>
+              <p style="padding: 0; margin: 0">Final project for <a href="http://www.cs.cmu.edu/~rsalakhu/10703/">10-703 Deep Reinforcement Learning and Control, Spring 2018</a></p>
+              <p style="padding: 0; margin: 0"> We implemented Snake in Python as a single-agent and multi-agent OpenAI Gym environment and successfully trained DDQN and A2C on both environments. Then, we patched up the abandoned OpenAI Universe and trained A2C on the online multiplayer game slither.io against real humans.
+              </p>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="section" id="involvement">
+      <h2>Involvement</h2>
+      <table>
+        <tbody>
+          <tr>
+            <td><img class="table-img" src="img/scottylabs.png" alt="hover"></td>
+            <td>
+              <h3 style="padding: 0; margin: 0"><a href="https://scottylabs.org/">ScottyLabs</a></h3>
+              <p style="padding: 0; margin: 0">Former Director of Events</p>
+              <p style="padding: 0; margin: 0"> It's my fourth year organizing CMU's largest annual hackathon <a href="https://tartanhacks.com/">TartanHacks</a>. I gave a tech talk on <a href="https://github.com/jzhanson/steve-crusader-against-the-earth">Git and using the Bash terminal</a> at tech talk event Crash Course. Later, I organized and mentored other speakers for tech talk events Web Dev Weekend and Crash Course.
+              </p>
+            </td>
+          </tr>
+          <tr>
+            <td><img class="table-img" src="img/issaquah.jpg" alt="hover"></td>
+            <td>
+              <h3 style="padding: 0; margin: 0"><a href="https://www.issaquahchamber.com/salmondays">Salmon Days</a></h3>
+              <p style="padding: 0; margin: 0"> Previously, I volunteered at Issaquah, WA's annual <a href="https://www.issaquahchamber.com/salmondays">Salmon Days festival</a> celebrating the return of almost two tons of salmon as a general-purpose can-do problem solver on the legendary "Ofishal XStream Team."
+              </p>
+            </td>
+          </tr>
+
+        </tbody>
+      </table>
+    </div>
+
+    <div class="section" id="coursework">
+      <h2>Coursework</h2>
+      <ul>
+        <li>[Fall 2019] 16-831 Statistical Techniques in Robotics</li>
+        <li>[Fall 2019] <a href="http://www.phontron.com/class/mtandseq2seq2019/index.html">11-731 Machine Translation and Sequence-to-Sequence Models</a></li>
+        <li>[Spring 2019] <a href="http://www.cs.cmu.edu/afs/cs/academic/class/15418-s19/www/index.html">15-418 Parallel Computer Architecture and Programming</a></li>
+        <li>[Spring 2019] <a href="http://brickisland.net/DDGSpring2019/">15-458 Discrete Differential Geometry</a></li>
+        <li>[Fall 2018] <a href="http://15462.courses.cs.cmu.edu/fall2018/">15-462 Computer Graphics</a></li>
+        <li>[Fall 2018] <a href="https://www.cs.cmu.edu/~rwh/courses/ppl/">15-312 Foundations of Programming Languages</a></li>
+        <li>[Spring 2018] <a href="http://www.cs.cmu.edu/~rsalakhu/10703/">10-703 Deep Reinforcement Learning and Control</a>
+      </ul>
+    </div>
+
   </body>
 
 </html>
