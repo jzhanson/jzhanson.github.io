@@ -3,7 +3,7 @@ email: josh@jzhanson.com
 description: >
   Josh Zhanson's personal website
 baseurl: ""
-url: "http://jzhanson.com" # the base hostname & protocol for your site
+url: "https://jzhanson.com" # the base hostname & protocol for your site
 github_username: jzhanson
 
 markdown: kramdown
