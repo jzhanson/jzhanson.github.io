@@ -20,7 +20,7 @@
       <h1 class="name">Joshua Zhanson</h1>
     </div>
 
-    <div class="section">
+    <section>
       <div style="float: right; margin: 0px 20px">
         <img class="profile-img" src="img/profile.jpg" alt="profile picture of Joshua Zhanson smiling in a winter jacket in front of a grassy background">
         <p style="padding: 0; margin: 0">Email: josh<span style="display:none">spam</span> at jzhanson dot com</p>
@@ -36,7 +36,7 @@
 
           <p>In my spare time, I love hiking, biking, running, and the great outdoors. I also play board games and tabletop RPGs.</p>
       </div>
-    </div>
+    </section>
 
     <!--
     <div class="section" id="news">
@@ -48,163 +48,151 @@
     </div>
     -->
 
-    <div class="section" id="projects">
-      <h2>Research</h2>
-      <table>
-        <tbody>
-          <tr>
-            <td><img class="table-img" src="img/ppo_m.png" alt="a results graph from On Proximal Policy Optimization's Heavy-tailed Gradients"></td>
-            <td>
-              <h3 style="padding: 0; margin: 0">On Proximal Policy Optimization's Heavy-tailed Gradients</h3>
-              <p style="padding: 0; margin: 0">Saurabh Garg, <b>Joshua Zhanson</b>, Emilio Parisotto, Adarsh Prasad, J. Zico Kolter, Zachary C. Lipton, Sivaraman Balakrishnan, Ruslan Salakhutdinov, Pradeep Ravikumar</p>
-              <p style="padding: 0; margin: 0"><a href="https://arxiv.org/abs/2102.10264">arxiv</a>, <a href=https://icml.cc/virtual/2021/poster/9149>ICML page</a></p>
-              <p style="padding: 0; margin: 0">ICML 2021, <a href=https://sites.google.com/view/sedl-workshop>Science and Engineering of Deep Learning (SEDL) Workshop at ICLR 2021</a>, <a href=https://www.cs.cmu.edu/~tcortina/thesis2020.html>CMU SCS Honors Senior Thesis 2020</a></p>
-              <p>Proximal Policy Optimization, a policy gradient optimization algorithm commonly used in deep reinforcement learning, relies on an arsenal of heuristics to offset significant heavy-tailedness in its gradients, which we can elide with Geometric Median-of-Means, a high-dimensional estimator from robust statistics.</p>
-            </td>
-          </tr>
-          <tr>
-            <td><img class="table-img" src="img/proprioceptive_state.png" alt="a visualization of the proprioceptive state representation from Proprioceptive Spatial Representations for Generalized Locomotion"></td>
-            <td>
-              <h3 style="padding: 0; margin: 0">Proprioceptive Spatial Representations for Generalized Locomotion</h3>
-              <p style="padding: 0; margin: 0"><b>Joshua Zhanson</b>, Emilio Parisotto, Ruslan Salakhutdinov</p>
-              <p style="padding: 0; margin: 0"><a href="PROPRIOCEPTIVE SPATIAL REPRESENTATIONS FOR GENERALIZED LOCOMOTION.pdf">pdf</a>, <a href=https://www.youtube.com/watch?v=epQrORTP5Q8>video</a>, <a href="https://sites.google.com/view/proprioceptive-representations">website</a>,  code (coming soon)</p>
-              <p style="padding: 0; margin: 0">Workshop on Structure and Priors in Reinforcement Learning (SPiRL) at ICLR 2019</p>
-              <p>A body-space state representation that implicitly encodes relative positional information by mapping sensor readings onto a spatial grid over the robot’s body facilitates learning of a general locomotion policy transferable across many randomized body configurations with different balances and requiring different walking gaits.</p>
-            </td>
-          </tr>
-        </tbody>
-      </table>
-    </div>
+    <section id="research">
+      <header><h2>Research</h2></header>
+      <div class="project-row-box">
+        <div class="project-img-box"><img class="project-img" src="img/ppo_m.png" alt="a results graph from On Proximal Policy Optimization's Heavy-tailed Gradients"></div>
+        <div class="project-text">
+          <h3 style="padding: 0; margin: 0">On Proximal Policy Optimization's Heavy-tailed Gradients</h3>
+          <p style="padding: 0; margin: 0">Saurabh Garg, <b>Joshua Zhanson</b>, Emilio Parisotto, Adarsh Prasad, J. Zico Kolter, Zachary C. Lipton, Sivaraman Balakrishnan, Ruslan Salakhutdinov, Pradeep Ravikumar</p>
+          <p style="padding: 0; margin: 0"><a href="https://arxiv.org/abs/2102.10264">arxiv</a>, <a href=https://icml.cc/virtual/2021/poster/9149>ICML page</a></p>
+          <p style="padding: 0; margin: 0">ICML 2021, <a href=https://sites.google.com/view/sedl-workshop>Science and Engineering of Deep Learning (SEDL) Workshop at ICLR 2021</a>, <a href=https://www.cs.cmu.edu/~tcortina/thesis2020.html>CMU SCS Honors Senior Thesis 2020</a></p>
+          <p>Proximal Policy Optimization, a policy gradient optimization algorithm commonly used in deep reinforcement learning, relies on an arsenal of heuristics to offset significant heavy-tailedness in its gradients, which we can elide with Geometric Median-of-Means, a high-dimensional estimator from robust statistics.</p>
+        </div>
+      </div>
 
-    <div class="section" id="teaching">
-      <h2>Teaching</h2>
-      <table>
-        <tbody>
-          <tr>
-            <td><img class="table-img" src="img/15300.png" alt="the cover of Writing for Computer Science Third Edition by Zobel" longdesc="https://image.slidesharecdn.com/writingforcomputerscience3rdeditionspringer-161111045634/95/writing-for-computer-science-3rd-edition-springer-1-638.jpg?cb=1478840240"></td>
-            <td>
-              <h3 style="padding: 0; margin: 0">15-300 Research and Innovation in Computer Science</h3>
-              <p style="padding: 0; margin: 0">TA, Fall 2020</p>
-              <p style="padding: 0; margin: 0"></p>
-            </td>
-          </tr>
+      <div class="project-row-box">
+        <div class="project-img-box"><img class="project-img" src="img/proprioceptive_state.png" alt="a visualization of the proprioceptive state representation from Proprioceptive Spatial Representations for Generalized Locomotion"></div>
+        <div class="project-text">
+          <h3 style="padding: 0; margin: 0">Proprioceptive Spatial Representations for Generalized Locomotion</h3>
+          <p style="padding: 0; margin: 0"><b>Joshua Zhanson</b>, Emilio Parisotto, Ruslan Salakhutdinov</p>
+          <p style="padding: 0; margin: 0"><a href="PROPRIOCEPTIVE SPATIAL REPRESENTATIONS FOR GENERALIZED LOCOMOTION.pdf">pdf</a>, <a href=https://www.youtube.com/watch?v=epQrORTP5Q8>video</a>, <a href="https://sites.google.com/view/proprioceptive-representations">website</a>,  code (coming soon)</p>
+          <p style="padding: 0; margin: 0">Workshop on Structure and Priors in Reinforcement Learning (SPiRL) at ICLR 2019</p>
+          <p>A body-space state representation that implicitly encodes relative positional information by mapping sensor readings onto a spatial grid over the robot’s body facilitates learning of a general locomotion policy transferable across many randomized body configurations with different balances and requiring different walking gaits.</p>
+        </div>
+      </div>
+    </section>
 
-          <tr>
-            <td><img class="table-img" src="img/15213.jpg" alt="the cover of Computer Systems: A Programmer's Perspective Third Edition by Bryant and O'Hallaron" longdesc="https://csapp.cs.cmu.edu/3e/images/csapp3e-cover.jpg"></td>
-            <td>
-              <h3 style="padding: 0; margin: 0"><a href="https://www.cs.cmu.edu/afs/cs/academic/class/15213-m19/www/index.html">15-213 Introduction to Computer Systems</a></h3>
-              <p style="padding: 0; margin: 0">TA, Summer 2020</p>
-              <p style="padding: 0; margin: 0">I led development of new lecture activities and porting existing lecture activities to a virtual format. I also proposed and implemented a remote active learning lecture format and schedule, and coordinated staff attendance at virtual active learning lectures.</p>
-            </td>
-          </tr>
+    <section id="teaching">
+      <header><h2>Teaching</h2></header>
+      <div class="project-row-box">
+        <div class="project-img-box"><img class="project-img" src="img/15300.png" alt="the cover of Writing for Computer Science Third Edition by Zobel" longdesc="https://image.slidesharecdn.com/writingforcomputerscience3rdeditionspringer-161111045634/95/writing-for-computer-science-3rd-edition-springer-1-638.jpg?cb=1478840240"></div>
+        <div class="project-text">
+          <h3 style="padding: 0; margin: 0">15-300 Research and Innovation in Computer Science</h3>
+          <p style="padding: 0; margin: 0">TA, Fall 2020</p>
+          <p style="padding: 0; margin: 0"></p>
+        </div>
+      </div>
 
-          <tr>
-            <td><img class="table-img" src="img/10703.jpg" alt="the cover of Reinforcement Learning An Introduction by Sutton" longdesc="https://pbs.twimg.com/media/Dp3-bvGXQAAa2Kz.jpg"></td>
-            <td>
-              <h3 style="padding: 0; margin: 0"><a href="https://cmudeeprl.github.io/703website/">10-703 Deep Reinforcement Learning and Control</a></h3>
-              <p style="padding: 0; margin: 0">TA, Fall 2019</p>
-              <p style="padding: 0; margin: 0">I updated and released homeworks on policy gradient methods and other topics, held office hours, and wrote in quiz and exam questions.</p>
-            </td>
-          </tr>
+      <div class="project-row-box">
+        <div class="project-img-box"><img class="project-img" src="img/15213.jpg" alt="the cover of Computer Systems: A Programmer's Perspective Third Edition by Bryant and O'Hallaron" longdesc="https://csapp.cs.cmu.edu/3e/images/csapp3e-cover.jpg"></div>
+        <div class="project-text">
+          <h3 style="padding: 0; margin: 0"><a href="https://www.cs.cmu.edu/afs/cs/academic/class/15213-m19/www/index.html">15-213 Introduction to Computer Systems</a></h3>
+          <p style="padding: 0; margin: 0">TA, Summer 2020</p>
+          <p style="padding: 0; margin: 0">I led development of new lecture activities and porting existing lecture activities to a virtual format. I also proposed and implemented a remote active learning lecture format and schedule, and coordinated staff attendance at virtual active learning lectures.</p>
+        </div>
+      </div>
 
-          <tr>
-            <td><img class="table-img" src="img/15300.png" alt="the cover of Writing for Computer Science Third Edition by Zobel" longdesc="https://image.slidesharecdn.com/writingforcomputerscience3rdeditionspringer-161111045634/95/writing-for-computer-science-3rd-edition-springer-1-638.jpg?cb=1478840240"></td>
-            <td>
-              <h3 style="padding: 0; margin: 0"><a href="https://www.cs.cmu.edu/afs/cs.cmu.edu/academic/class/15300-f19/www">15-300 Research and Innovation in Computer Science</a></h3>
-              <p style="padding: 0; margin: 0">TA, Fall 2019</p>
-              <p style="padding: 0; margin: 0">I help equip students with the tools needed to get involved in and effectively carry out undergraduate research. I also provide mentorship and support during undergraduate research projects and coaching on topics such as academic writing and presenting research to an academic and non-academic audience.</p>
-            </td>
-          </tr>
+      <div class="project-row-box">
+        <div class="project-img-box"><img class="project-img" src="img/10703.jpg" alt="the cover of Reinforcement Learning An Introduction by Sutton" longdesc="https://pbs.twimg.com/media/Dp3-bvGXQAAa2Kz.jpg"></div>
+        <div class="project-text">
+          <h3 style="padding: 0; margin: 0"><a href="https://cmudeeprl.github.io/703website/">10-703 Deep Reinforcement Learning and Control</a></h3>
+          <p style="padding: 0; margin: 0">TA, Fall 2019</p>
+          <p style="padding: 0; margin: 0">I updated and released homeworks on policy gradient methods and other topics, held office hours, and wrote in quiz and exam questions.</p>
+        </div>
+      </div>
 
-          <tr>
-            <td><img class="table-img" src="img/15213.jpg" alt="the cover of Computer Systems: A Programmer's Perspective Third Edition by Bryant and O'Hallaron" longdesc="https://csapp.cs.cmu.edu/3e/images/csapp3e-cover.jpg"></td>
-            <td>
-              <h3 style="padding: 0; margin: 0"><a href="https://www.cs.cmu.edu/afs/cs/academic/class/15213-m19/www/index.html">15-213 Introduction to Computer Systems</a></h3>
-              <p style="padding: 0; margin: 0">TA, Summer 2019</p>
-              <p style="padding: 0; margin: 0">I developed active learning lecture activities on system-level I/O, network protocols, and participated in development for activities on bit-level representations, machine programming, and exceptional control flow (processes and signals). I also scaled and benchmarked memory access traces to evaluate student dynamic memory allocator submissions.</p>
-            </td>
-          </tr>
-        </tbody>
-      </table>
-    </div>
+      <div class="project-row-box">
+        <div class="project-img-box"><img class="project-img" src="img/15300.png" alt="the cover of Writing for Computer Science Third Edition by Zobel" longdesc="https://image.slidesharecdn.com/writingforcomputerscience3rdeditionspringer-161111045634/95/writing-for-computer-science-3rd-edition-springer-1-638.jpg?cb=1478840240"></div>
+        <div class="project-text">
+          <h3 style="padding: 0; margin: 0"><a href="https://www.cs.cmu.edu/afs/cs.cmu.edu/academic/class/15300-f19/www">15-300 Research and Innovation in Computer Science</a></h3>
+          <p style="padding: 0; margin: 0">TA, Fall 2019</p>
+          <p style="padding: 0; margin: 0">I help equip students with the tools needed to get involved in and effectively carry out undergraduate research. I also provide mentorship and support during undergraduate research projects and coaching on topics such as academic writing and presenting research to an academic and non-academic audience.</p>
+        </div>
+      </div>
 
-    <div class="section" id="projects">
-      <h2>Projects</h2>
-      <table>
-        <tbody>
-          <tr>
-            <td><img class="table-img" src="img/scs_logo.gif" alt="the logo of the Carnegie Mellon University School of Computer Science, a red dragon on a white background"></td>
-            <td>
-              <h3 style="padding: 0; margin: 0">15-410 Pebbles Kernel "jOSh"</h3>
-              <p style="padding: 0; margin: 0">With Joshua Kalapos.</p>
-              <p style="padding: 0; margin: 0">For <a href="https://www.cs.cmu.edu/~410/">15-410 Operating System Design and Implementation, Spring 2020</a></p>
-              <p style="padding: 0; margin: 0"> We built an Unix-like operating system kernel with support for tasks and threads, paging and multiple virtual memory address spaces, scheduling and sleeping, and context switching and preemptive multitasking to run on real x86 IA-32 Intel hardware.
-              </p>
-            </td>
-          </tr>
-          <tr>
-            <td><img class="table-img" src="img/parallel_mcts.jpg" alt="a diagram of the four steps of Monte Carlo Tree Search"></td>
-            <td>
-              <h3 style="padding: 0; margin: 0">Parallel Monte Carlo Tree Search for Tak</h3>
-              <p style="padding: 0; margin: 0">With Eric Nie.</p>
-              <p style="padding: 0; margin: 0">Final project for <a href="https://www.cs.cmu.edu/afs/cs/academic/class/15418-s19/www/index.html">15-418 Parallel Computer Architecture and Programming, Spring 2019</a></p>
-              <p style="padding: 0; margin: 0"> We implemented and benchmarked a leaf-parallelized, root-parallelized, and tree-parallelized Monte Carlo Tree Search agent to play the fantasy board game <a href="https://en.wikipedia.org/wiki/Tak_(game)">Tak</a>.
-              </p>
-            </td>
-          </tr>
-          <tr>
-            <td><img class="table-img" src="img/breakout_demo.png" alt="a screenshot from the Atari game Breakout"></td>
-            <td>
-              <h3 style="padding: 0; margin: 0"><a href="https://github.com/jzhanson/breakout-demo">breakout-demo</a></h3>
-              <p style="padding: 0; margin: 0"></p>
-              <p style="padding: 0; margin: 0"></p>
-              <p style="padding: 0; margin: 0"> I implemented and trained Advantage Actor-Critic agent to reach 200+ average reward per episode over 100 episodes and max reward of 428 on OpenAI Gym Breakout-v0 environment. I also wrote a <a href="https://blog.jzhanson.com/blog/rl/project/2018/05/28/breakout.html">blog post</a> about it.
-              </p>
-            </td>
-          </tr>
+      <div class="project-row-box">
+        <div class="project-img-box"><img class="project-img" src="img/15213.jpg" alt="the cover of Computer Systems: A Programmer's Perspective Third Edition by Bryant and O'Hallaron" longdesc="https://csapp.cs.cmu.edu/3e/images/csapp3e-cover.jpg"></div>
+        <div class="project-text">
+          <h3 style="padding: 0; margin: 0"><a href="https://www.cs.cmu.edu/afs/cs/academic/class/15213-m19/www/index.html">15-213 Introduction to Computer Systems</a></h3>
+          <p style="padding: 0; margin: 0">TA, Summer 2019</p>
+          <p style="padding: 0; margin: 0">I developed active learning lecture activities on system-level I/O, network protocols, and participated in development for activities on bit-level representations, machine programming, and exceptional control flow (processes and signals). I also scaled and benchmarked memory access traces to evaluate student dynamic memory allocator submissions.</p>
+        </div>
+      </div>
+    </section>
 
-          <tr>
-            <td><img class="table-img" src="img/slither_after.png" alt="a black-and-white state representation for an agent in the slither.io game"></td>
-            <td>
-              <h3 style="padding: 0; margin: 0">Slither-703</h3>
-              <p style="padding: 0; margin: 0">With Shreyan Bakshi and Eric Nie. </p>
-              <p style="padding: 0; margin: 0">Final project for <a href="https://www.cs.cmu.edu/~rsalakhu/10703/">10-703 Deep Reinforcement Learning and Control, Spring 2018</a></p>
-              <p style="padding: 0; margin: 0"> We implemented Snake in Python as a single-agent and multi-agent OpenAI Gym environment and successfully trained DDQN and A2C on both environments. Then, we patched up the abandoned OpenAI Universe and trained A2C on the online multiplayer game slither.io against real humans.
-              </p>
-            </td>
-          </tr>
-        </tbody>
-      </table>
-    </div>
+    <section id="projects">
+      <header><h2>Projects</h2></header>
+      <div class="project-row-box">
+        <div class="project-img-box"><img class="project-img" src="img/scs_logo.gif" alt="the logo of the Carnegie Mellon University School of Computer Science, a red dragon on a white background"></div>
+        <div class="project-text">
+          <h3 style="padding: 0; margin: 0">15-410 Pebbles Kernel "jOSh"</h3>
+          <p style="padding: 0; margin: 0">With Joshua Kalapos.</p>
+          <p style="padding: 0; margin: 0">For <a href="https://www.cs.cmu.edu/~410/">15-410 Operating System Design and Implementation, Spring 2020</a></p>
+          <p style="padding: 0; margin: 0"> We built an Unix-like operating system kernel with support for tasks and threads, paging and multiple virtual memory address spaces, scheduling and sleeping, and context switching and preemptive multitasking to run on real x86 IA-32 Intel hardware.
+          </p>
+        </div>
+      </div>
 
-    <div class="section" id="involvement">
-      <h2>Involvement</h2>
-      <table>
-        <tbody>
-          <tr>
-            <td><img class="table-img" src="img/scottylabs.png" alt="the logo for ScottyLabs, a light gray simplistic stylized dog on a dark gray background" longdesc="https://scottylabs.org/img/shareable-brand.png"></td>
-            <td>
-              <h3 style="padding: 0; margin: 0"><a href="https://scottylabs.org/">ScottyLabs</a></h3>
-              <p style="padding: 0; margin: 0">Former Director of Events</p>
-              <p style="padding: 0; margin: 0"> It's my fourth year organizing CMU's largest annual hackathon <a href="https://tartanhacks.com/">TartanHacks</a>. I gave a tech talk on <a href="https://github.com/jzhanson/steve-crusader-against-the-earth">Git and using the Bash terminal</a> at tech talk event Crash Course. Later, I organized and mentored other speakers for tech talk events Web Dev Weekend and Crash Course.
-              </p>
-            </td>
-          </tr>
-          <tr>
-            <td><img class="table-img" src="img/issaquah.jpg" alt="the logo of the city of Issaquah, Washington" longdesc="https://pbs.twimg.com/profile_images/876904401192878080/H9sV0WNl_400x400.jpg"></td>
-            <td>
-              <h3 style="padding: 0; margin: 0"><a href="https://www.issaquahchamber.com/salmondays">Salmon Days</a></h3>
-              <p style="padding: 0; margin: 0"> Previously, I volunteered at Issaquah, WA's annual Salmon Days festival celebrating the return of almost two tons of salmon as a general-purpose can-do problem solver on the legendary "Ofishal XStream Team."
-              </p>
-            </td>
-          </tr>
+      <div class="project-row-box">
+        <div class="project-img-box"><img class="project-img" src="img/parallel_mcts.jpg" alt="a diagram of the four steps of Monte Carlo Tree Search"></div>
+        <div class="project-text">
+          <h3 style="padding: 0; margin: 0">Parallel Monte Carlo Tree Search for Tak</h3>
+          <p style="padding: 0; margin: 0">With Eric Nie.</p>
+          <p style="padding: 0; margin: 0">Final project for <a href="https://www.cs.cmu.edu/afs/cs/academic/class/15418-s19/www/index.html">15-418 Parallel Computer Architecture and Programming, Spring 2019</a></p>
+          <p style="padding: 0; margin: 0"> We implemented and benchmarked a leaf-parallelized, root-parallelized, and tree-parallelized Monte Carlo Tree Search agent to play the fantasy board game <a href="https://en.wikipedia.org/wiki/Tak_(game)">Tak</a>.
+          </p>
+        </div>
+      </div>
 
-        </tbody>
-      </table>
-    </div>
+      <div class="project-row-box">
+        <div class="project-img-box"><img class="project-img" src="img/breakout_demo.png" alt="a screenshot from the Atari game Breakout"></div>
+        <div class="project-text">
+          <h3 style="padding: 0; margin: 0"><a href="https://github.com/jzhanson/breakout-demo">breakout-demo</a></h3>
+          <p style="padding: 0; margin: 0"></p>
+          <p style="padding: 0; margin: 0"></p>
+          <p style="padding: 0; margin: 0"> I implemented and trained Advantage Actor-Critic agent to reach 200+ average reward per episode over 100 episodes and max reward of 428 on OpenAI Gym Breakout-v0 environment. I also wrote a <a href="https://blog.jzhanson.com/blog/rl/project/2018/05/28/breakout.html">blog post</a> about it.
+          </p>
+        </div>
+      </div>
 
-    <div class="section" id="coursework">
-      <h2>Coursework</h2>
+      <div class="project-row-box">
+        <div class="project-img-box"><img class="project-img" src="img/slither_after.png" alt="a black-and-white state representation for an agent in the slither.io game"></div>
+        <div class="project-text">
+          <h3 style="padding: 0; margin: 0">Slither-703</h3>
+          <p style="padding: 0; margin: 0">With Shreyan Bakshi and Eric Nie. </p>
+          <p style="padding: 0; margin: 0">Final project for <a href="https://www.cs.cmu.edu/~rsalakhu/10703/">10-703 Deep Reinforcement Learning and Control, Spring 2018</a></p>
+          <p style="padding: 0; margin: 0"> We implemented Snake in Python as a single-agent and multi-agent OpenAI Gym environment and successfully trained DDQN and A2C on both environments. Then, we patched up the abandoned OpenAI Universe and trained A2C on the online multiplayer game slither.io against real humans.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section id="involvement">
+      <header><h2>Involvement</h2></header>
+
+      <div class="project-row-box">
+        <div class="project-img-box"><img class="project-img" src="img/scottylabs.png" alt="the logo for ScottyLabs, a light gray simplistic stylized dog on a dark gray background" longdesc="https://scottylabs.org/img/shareable-brand.png"></div>
+        <div class="project-text">
+          <h3 style="padding: 0; margin: 0"><a href="https://scottylabs.org/">ScottyLabs</a></h3>
+          <p style="padding: 0; margin: 0">Former Director of Events</p>
+          <p style="padding: 0; margin: 0"> It's my fourth year organizing CMU's largest annual hackathon <a href="https://tartanhacks.com/">TartanHacks</a>. I gave a tech talk on <a href="https://github.com/jzhanson/steve-crusader-against-the-earth">Git and using the Bash terminal</a> at tech talk event Crash Course. Later, I organized and mentored other speakers for tech talk events Web Dev Weekend and Crash Course.
+          </p>
+        </div>
+      </div>
+
+      <div class="project-row-box">
+        <div class="project-img-box"><img class="project-img" src="img/issaquah.jpg" alt="the logo of the city of Issaquah, Washington" longdesc="https://pbs.twimg.com/profile_images/876904401192878080/H9sV0WNl_400x400.jpg"></div>
+        <div class="project-text">
+          <h3 style="padding: 0; margin: 0"><a href="https://www.issaquahchamber.com/salmondays">Salmon Days</a></h3>
+          <p style="padding: 0; margin: 0"> Previously, I volunteered at Issaquah, WA's annual Salmon Days festival celebrating the return of almost two tons of salmon as a general-purpose can-do problem solver on the legendary "Ofishal XStream Team."
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section id="coursework">
+      <header><h2>Coursework</h2></header>
       <ul>
         <li>[Fall 2021] 11-624 Human Language for AI</li>
         <li>[Fall 2021] <a href="https://www.cs.cmu.edu/~nihars/teaching/10715-Fa21/index.html">10-715 Advanced Introduction to Machine Learning</a></li>
@@ -219,7 +207,7 @@
         <li>[Fall 2018] <a href="https://www.cs.cmu.edu/~rwh/courses/ppl/">15-312 Foundations of Programming Languages</a></li>
         <li>[Spring 2018] <a href="https://www.cs.cmu.edu/~rsalakhu/10703/">10-703 Deep Reinforcement Learning and Control</a>
       </ul>
-    </div>
+    </section>
 
   </body>
 
