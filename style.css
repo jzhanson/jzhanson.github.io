@@ -17,15 +17,15 @@ h1, h2, h3, h4, h5, h6, strong {
 a {
 }
 
-.container {
-  width: 80%
-  margin: auto
-}
-
-.section {
+section {
   width: 80%;
   margin: auto;
   text-align: left;
+}
+
+.container {
+  width: 80%
+  margin: auto
 }
 
 .name-box {
@@ -43,6 +43,22 @@ a {
   width: 100%;
 }
 
+.project-row-box {
+  display: flex;
+  align-items: center;
+}
+
+.project-text {
+  flex: 1 1 auto;
+}
+
+.project-img-box {
+  float: left;
+  margin: 0px 20px;
+  min-width: 150px;
+  min-height: 150px;
+}
+
 img.profile-img {
   max-width: 200px;
   max-height: 200px;
@@ -51,13 +67,11 @@ img.profile-img {
   border-radius: 8px;
 }
 
-img.table-img {
+img.project-img {
   max-width: 150px;
   max-height: 150px;
   width: auto;
   height: auto;
-  margin-top: 10px;
-  margin-bottom: 10px;
-  margin-right: 5px;
+  margin: 10px auto;
 }
 
